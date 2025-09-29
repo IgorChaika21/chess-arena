@@ -1,4 +1,3 @@
-// src/hooks/useMoveHandler.ts
 import { useMemo, useCallback } from 'react';
 
 import { useGameStore } from '@/store/useGameStore';

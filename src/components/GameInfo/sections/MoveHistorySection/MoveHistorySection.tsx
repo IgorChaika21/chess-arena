@@ -1,4 +1,3 @@
-// src/components/GameInfo/sections/MoveHistorySection.tsx
 import React from 'react';
 import type { JSX } from 'react';
 

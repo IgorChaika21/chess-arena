@@ -1,4 +1,3 @@
-// src/components/PromotionModal/PromotionModal.styles.ts
 import styled from 'styled-components';
 
 export const PromotionModalOverlay = styled.div`

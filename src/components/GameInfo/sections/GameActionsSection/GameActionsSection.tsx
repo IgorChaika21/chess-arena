@@ -1,4 +1,3 @@
-// src/components/GameInfo/sections/GameActionsSection.tsx
 import React from 'react';
 
 import { useGameStore, useEffectiveGameStatus } from '@/store/useGameStore';

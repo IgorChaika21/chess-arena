@@ -1,4 +1,3 @@
-// src/styles/styledComponents.ts
 import styled from 'styled-components';
 
 import { media } from '@/styles/breakpoints';

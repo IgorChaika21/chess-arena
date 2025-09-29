@@ -3,7 +3,6 @@ import { Colors, FigureNames } from '@/types/types';
 
 import { doesMovePutKingInCheck, isKingInCheck } from './gameStateHelpers';
 
-// --- Правила для фигур ---
 export const isValidPawnMove = (
   board: Board,
   from: BoardPosition,

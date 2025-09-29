@@ -1,4 +1,3 @@
-// types.ts
 export enum Colors {
   WHITE = 'white',
   BLACK = 'black',
@@ -19,7 +18,6 @@ export enum GameMode {
 }
 
 export interface ChessPiece {
-  symbol: string;
   color: Colors;
   type: FigureNames;
   hasMoved?: boolean;

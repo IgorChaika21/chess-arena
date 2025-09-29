@@ -1,7 +1,4 @@
-// src/components/ChessBoard/Square.styles.ts
 import styled from 'styled-components';
-
-import { media } from '@/styles/breakpoints';
 
 export const SquareContainer = styled.div<{
   $isDark: boolean;
@@ -41,22 +38,4 @@ export const SquareContainer = styled.div<{
       pointer-events: none;
     }
   `}
-`;
-
-export const Piece = styled.span<{ $color: 'white' | 'black' }>`
-  font-size: calc(90vmin / 8 * 0.6);
-  position: absolute;
-  line-height: 1;
-  user-select: none;
-  color: ${props => props.$color};
-
-  ${props =>
-    props.$color === 'white' &&
-    `
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  `}
-
-  ${media.xl} {
-    font-size: calc(95vmin / 8 * 0.6);
-  }
 `;

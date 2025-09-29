@@ -1,4 +1,3 @@
-// src/components/PromotionModal/PromotionModal.tsx
 import type { PromotionPieceType } from '@/types/types';
 import { FigureNames } from '@/types/types';
 
@@ -9,7 +8,6 @@ import {
   PromotionButton,
 } from './PromotionModal.styles';
 
-// ✅ Добавляем интерфейс для пропсов
 interface Props {
   isOpen: boolean;
   onPromotionSelect: (pieceType: PromotionPieceType) => void;

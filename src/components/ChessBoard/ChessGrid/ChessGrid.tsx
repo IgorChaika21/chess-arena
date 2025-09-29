@@ -1,4 +1,3 @@
-// src/components/ChessBoard/ChessGrid.tsx
 import React, { useMemo, useCallback } from 'react';
 
 import { columnLabels, rowLabels } from '@/constants/constants';

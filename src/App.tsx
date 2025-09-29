@@ -1,4 +1,3 @@
-// src/App.tsx
 import { ThemeProvider } from 'styled-components';
 
 import AppLayout from '@/components/AppLayout/AppLayout';

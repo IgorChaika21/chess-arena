@@ -1,4 +1,3 @@
-// src/components/ConfirmationModal/ConfirmationModal.styles.ts
 import styled from 'styled-components';
 
 export const ModalOverlay = styled.div`

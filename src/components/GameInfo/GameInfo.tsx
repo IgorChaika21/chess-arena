@@ -1,4 +1,3 @@
-// src/components/GameInfo/GameInfo.tsx
 import { useState } from 'react';
 
 import {

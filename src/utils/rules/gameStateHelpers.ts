@@ -10,7 +10,6 @@ import {
   isValidKingMove,
 } from './pieceRules';
 
-// --- Проверка атак ---
 export const isSquareUnderAttack = (
   board: Board,
   square: BoardPosition,
@@ -58,7 +57,6 @@ export const isSquareUnderAttack = (
   return false;
 };
 
-// --- Проверка шаха ---
 export const isKingInCheck = (board: Board, kingColor: Colors): boolean => {
   let kingPos: BoardPosition | null = null;
   for (let r = 0; r < 8; r++) {
@@ -85,7 +83,6 @@ export const isKingInCheck = (board: Board, kingColor: Colors): boolean => {
   );
 };
 
-// --- Проверка, оставляет ли ход короля под шахом ---
 export const doesMovePutKingInCheck = (
   board: Board,
   from: BoardPosition,

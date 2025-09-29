@@ -1,16 +1,16 @@
-// src/components/ChessBoard/Square.tsx
 import React from 'react';
 
-import type { ChessPiece } from '@/types/types';
+import ChessPiece from '@/components/ChessBoard/ChessPiece/ChessPiece';
+import type { ChessPiece as ChessPieceType } from '@/types/types';
 
-import { SquareContainer, Piece } from './Square.styles';
+import { SquareContainer } from './Square.styles';
 
 interface SquareProps {
   isDark: boolean;
   isSelected: boolean;
   isMoveOption?: boolean;
   onClick: () => void;
-  piece?: ChessPiece | null;
+  piece?: ChessPieceType | null;
 }
 
 const Square: React.FC<SquareProps> = ({
@@ -27,7 +27,7 @@ const Square: React.FC<SquareProps> = ({
       $isMoveOption={isMoveOption}
       onClick={onClick}
     >
-      {piece && <Piece $color={piece.color}>{piece.symbol}</Piece>}
+      {piece && <ChessPiece type={piece.type} color={piece.color} size={40} />}
     </SquareContainer>
   );
 };

@@ -1,10 +1,8 @@
-// botAI.ts (updated)
 import type { Board, Colors, BoardPosition } from '@/types/types';
 import { getRandomMove } from '@/utils/bot/randomBotMove';
 
 import type { StockfishService } from './stockfishService';
 
-// Bot that uses Stockfish for better moves
 export const makeBotMove = async (
   board: Board,
   currentPlayer: Colors,

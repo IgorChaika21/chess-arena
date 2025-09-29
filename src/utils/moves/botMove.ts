@@ -1,4 +1,3 @@
-// src/utils/moves/botMove.ts
 import type {
   Board,
   BotMoveResult,
@@ -13,13 +12,6 @@ import { FigureNames } from '@/types/types';
 import { applyMove } from './applyMove';
 import { handleRegularMove } from './regularMove';
 
-/**
- * Ход бота: сначала проверяем, требует ли ход промо (handleRegularMove.promotionRequired).
- * - Если требует -> применяем промо (бот всегда выбирает ферзя).
- * - Иначе -> применяем обычный ход.
- *
- * Возвращаем структуру BotMoveResult (новая доска, capturedPieces, enPassantTarget, история, статус, nextPlayer).
- */
 export function handleBotMove(
   board: Board,
   from: BoardPosition,

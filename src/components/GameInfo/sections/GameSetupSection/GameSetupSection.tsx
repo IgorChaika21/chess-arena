@@ -1,4 +1,3 @@
-// src/components/GameInfo/sections/GameSetupSection.tsx
 import React, { useState, useCallback } from 'react';
 
 import { useGameStore } from '@/store/useGameStore';

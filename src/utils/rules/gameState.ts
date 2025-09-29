@@ -1,4 +1,3 @@
-// utils/gameState.ts
 import type { Board } from '@/types/types';
 import { Colors, GameStatus } from '@/types/types';
 

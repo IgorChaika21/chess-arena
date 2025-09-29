@@ -1,4 +1,3 @@
-// src/hooks/useBoardState.ts
 import { useState, useCallback, useMemo } from 'react';
 
 import { INITIALBOARD } from '@/constants/constants';

@@ -1,4 +1,3 @@
-// src/hooks/useBotPlayer.ts
 import { useEffect, useRef, useCallback, useMemo } from 'react';
 
 import { makeBotMove } from '@/engine/botAI';
@@ -11,7 +10,6 @@ import { handleBotMove } from '@/utils/moves/botMove';
 
 import type { UseBoardState } from './useBoardState';
 
-// Тип для параметров хода
 interface MoveParams {
   board: Board;
   currentPlayer: Colors;

@@ -1,4 +1,3 @@
-// src/styles/GlobalStyles.ts
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
@@ -25,7 +24,6 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Marcellus", serif;
   }
 
-  /* Убираем стандартные стили кнопок */
   button {
     border: none;
     background: none;

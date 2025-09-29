@@ -1,4 +1,3 @@
-// utils/chessNotation.ts
 import { columnLabels, rowLabels } from '@/constants/constants';
 import { FigureNames } from '@/types/types';
 import type {

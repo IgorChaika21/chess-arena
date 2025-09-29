@@ -1,4 +1,3 @@
-// src/components/GameInfo/sections/GameStatusSection.tsx
 import React from 'react';
 
 import { gameStatusText } from '@/constants/constants';

@@ -1,4 +1,3 @@
-// src/hooks/useChessGame.ts
 import { useEffect } from 'react';
 
 import { useGameStore } from '@/store/useGameStore';

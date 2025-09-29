@@ -1,7 +1,6 @@
 import type { Board } from '@/types/types';
 import { Colors, FigureNames } from '@/types/types';
 
-// Shared function to convert board to FEN
 export const convertBoardToFEN = (
   board: Board,
   currentPlayer: Colors

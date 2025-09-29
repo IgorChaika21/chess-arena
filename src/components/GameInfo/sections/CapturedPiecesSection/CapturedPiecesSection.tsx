@@ -1,10 +1,9 @@
-// src/components/GameInfo/sections/CapturedPiecesSection.tsx
 import React, { useMemo } from 'react';
 
-import { chessIcons } from '@/constants/constants';
+import ChessPiece from '@/components/ChessBoard/ChessPiece/ChessPiece';
 import { useGameStore } from '@/store/useGameStore';
 import { Colors, FigureNames } from '@/types/types';
-import type { ChessPiece } from '@/types/types';
+import type { ChessPiece as ChessPieceType } from '@/types/types';
 
 import { Section, SectionTitle } from '../sections.styles';
 
@@ -22,7 +21,7 @@ const CapturedPiecesSection: React.FC = () => {
   const { capturedPieces } = useGameStore();
 
   const pieceCounts = useMemo(() => {
-    const countPiecesByType = (pieces: ChessPiece[]) => {
+    const countPiecesByType = (pieces: ChessPieceType[]) => {
       const counts: Record<string, number> = {};
       pieces.forEach(piece => {
         counts[piece.type] = (counts[piece.type] || 0) + 1;
@@ -54,7 +53,8 @@ const CapturedPiecesSection: React.FC = () => {
 
         return (
           <CapturedPiece key={type} $color={color}>
-            {chessIcons[type]}×{counts[type]}{' '}
+            <ChessPiece type={type} color={color} size={20} />×
+            {counts[type]}{' '}
           </CapturedPiece>
         );
       });

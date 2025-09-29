@@ -1,4 +1,3 @@
-import { chessIcons } from '@/constants/constants';
 import type {
   Board,
   CapturedPieces,
@@ -33,7 +32,6 @@ export const handlePromotionMove = (
   }
 
   newBoard[toRow][toCol] = {
-    symbol: chessIcons[pieceType],
     color: movingPiece.color,
     type: pieceType,
     hasMoved: true,

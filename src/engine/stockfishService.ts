@@ -1,4 +1,3 @@
-// utils/stockfishService.ts
 import type { Board, Colors } from '@/types/types';
 import { convertBoardToFEN } from '@/utils/notation/fenUtils';
 

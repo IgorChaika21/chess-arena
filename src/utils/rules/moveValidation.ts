@@ -11,7 +11,6 @@ import {
   isValidKingMove,
 } from './pieceRules';
 
-// --- Главная проверка хода ---
 export const isValidMove = (
   board: Board,
   from: BoardPosition,

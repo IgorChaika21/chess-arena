@@ -1,4 +1,3 @@
-// src/components/ChessBoard/ChessGrid.styles.ts
 import styled from 'styled-components';
 
 import { media } from '@/styles/breakpoints';

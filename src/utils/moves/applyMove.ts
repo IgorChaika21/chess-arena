@@ -1,4 +1,3 @@
-// src/utils/moves/applyMove.ts
 import type { ApplyMoveParams, ApplyMoveResult } from '@/types/types';
 
 import { createMoveRecord } from '../notation/moveRecord';
@@ -7,10 +6,6 @@ import { getGameStatusAfterMove, getNextPlayer } from '../rules/gameState';
 import { handlePromotionMove } from './promotionMove';
 import { handleRegularMove } from './regularMove';
 
-/**
- * applyPromotionMove - вспомогательная функция, выполняет промоушен (если у нас уже выбран pieceType)
- * Возвращает результат хода (promotionRequired: false, т.к. промо применён).
- */
 function applyPromotionMove(params: ApplyMoveParams): ApplyMoveResult {
   const {
     board,

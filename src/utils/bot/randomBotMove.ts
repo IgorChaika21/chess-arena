@@ -3,7 +3,6 @@ import { Colors } from '@/types/types';
 
 import { isValidMove } from '../rules/moveValidation';
 
-// Shared function to get random move
 export const getRandomMove = (
   board: Board,
   currentPlayer: Colors,

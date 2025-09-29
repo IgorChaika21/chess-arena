@@ -1,4 +1,3 @@
-// src/components/GameInfo/sections/GameSetupSection.styles.ts
 import styled from 'styled-components';
 
 import { media } from '@/styles/breakpoints';
